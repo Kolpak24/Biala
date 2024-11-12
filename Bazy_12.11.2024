@@ -1,1 +1,1 @@
-SELECT auto.*, komis.miasto FROM `auto` JOIN umowa ON auto.id=umowa.auto_id JOIN komis ON komis.id=umowa.komis_id
+SELECT auto.marka, auto.kolor, komis.miasto FROM auto LEFT JOIN umowa ON auto_id = umowa.auto_id LEFT JOIN komis ON umowa.komis_id = komis_id;
