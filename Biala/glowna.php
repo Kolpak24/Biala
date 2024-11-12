@@ -11,10 +11,10 @@
     .biala {text-align: center; color: white; font-size: 36px;}
 
     .main{display: flex;}
-    .menu {flex: 1; text-align: left; color: white ; font-size: 24px;}
-    .form {flex: 8; text-align: left    ; color: white; font-size: 24px;}
+    .menu {flex: 1; text-align: left; background-color: grey; color: white ; font-size: 24px;}
+    .form {flex: 8  ; text-align: left    ; color: white; font-size: 24px;}
 
-    button {width:100px; height: 25px;}
+    button {width:125px; height: 25px;}
 </style>
 
 <body>
