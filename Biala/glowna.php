@@ -12,7 +12,7 @@
 
     .main{display: flex;}
     .menu {flex: 1; text-align: left; color: white ; font-size: 24px;}
-    .form {flex: 5; text-align: left    ; color: white; font-size: 24px;}
+    .form {flex: 8; text-align: left    ; color: white; font-size: 24px;}
 
     button {width:100px; height: 25px;}
 </style>
