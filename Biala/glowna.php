@@ -12,7 +12,8 @@
 
     .main{display: flex;}
     .menu {flex: 1; text-align: left; background-color: grey; color: white ; font-size: 24px;}
-    .form {flex: 8  ; text-align: left    ; color: white; font-size: 24px;}
+    .form {flex: 8  ; text-align: center; color: white; font-size: 26px;}
+    .login{flex: 1; text-align: right; background-color: grey; color: white;font-size: 24px}
 
     button {width:125px; height: 25px;}
 </style>
@@ -32,6 +33,11 @@
 
         <div class="form">
             W tym miejscu możesz na spokojnie mażyć o białej europie i dizelić się swoimi przemyśleniami z innymi wiernymi tej idei!
+        </div>
+
+        <div class="login">
+            <button type="button" onclick="locaation.href='login.php'">Zaloguj sie</button><br>
+            <button type="button" onclick="locaation.href='singup.php'">Zarejestruj sie</button><br>
         </div>
 
     </div>
