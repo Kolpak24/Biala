@@ -7,10 +7,13 @@
 
 <style>
     body {background-color: black;}
+
     .biala {text-align: center; color: white; font-size: 36px;}
-    .form {text-align: center; color: white; font-size: 24px;}
-    .menu {text-align: left; color: white ; font-size: 24px;}
-    .lewo{text-align: left;}
+
+    .main{display: flex;}
+    .menu {flex: 1; text-align: left; color: white ; font-size: 24px;}
+    .form {flex: 5; text-align: left    ; color: white; font-size: 24px;}
+
     button {width:100px; height: 25px;}
 </style>
 
@@ -19,13 +22,18 @@
     <h1>Stronnictwo bialej europy</h1>
     <img src="bialaeuropa.avif" height="311,5" width="512">
     </div>
-    <div class="biala">
-        W tym miejscu możesz na spokojnie mażyć o białej europie i dizelić się swoimi przemyśleniami z innymi wiernymi tej idei!
-    </div>
-    <br><br><br><br><br><br><br>
-    <div class="menu">
-        <button type="button" onclick="location.href='poszukiwani.php'">POSZUKIWANI</button><br>
-        <button type="button" onclick="location.href=''">SPRZYMIEŻENI</button><br>
+
+    <div class="main">
+    
+        <div class="menu">
+            <button type="button" onclick="location.href='poszukiwani.php'">POSZUKIWANI</button><br>
+            <button type="button" onclick="location.href=''">SPRZYMIEŻENI</button><br>
+        </div>
+
+        <div class="form">
+            W tym miejscu możesz na spokojnie mażyć o białej europie i dizelić się swoimi przemyśleniami z innymi wiernymi tej idei!
+        </div>
+
     </div>
 </body>
 </html>
