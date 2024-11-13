@@ -12,10 +12,10 @@
 <body>
     <h1>Zarejestruj się przybyszu!</h1>
     <form class="login" method="post" action="ssingup.php">
-        <input type="text" id="username" placeholder="Username" required><br>
-        <input type="email" id="email" placeholder="E-Mail" required><br>
-        <input type="password" id="password" placeholder="Haslo" required><br>
-        <button type="submit" name="sub" onclick="slog.php">Zarejestruj się</button>
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="email" name="email" placeholder="E-Mail" required><br>
+        <input type="password" name="password" placeholder="Hasło" required><br>
+        <button type="submit" name="sub">Zarejestruj się</button>
     </form>
 </body>
 </html>
