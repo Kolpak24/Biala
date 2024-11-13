@@ -12,9 +12,9 @@
 <body>
     <h1>Zaloguj się przybyszu!</h1>
     <form class="login" method="post" action="slogin.php">
-        <input type="username" id="username" placeholder="username" required><br>
-        <input type="email" id="email" placeholder="E-Mail" required><br>
-        <input type="password" id="password" placeholder="Haslo" required><br>
+        <input type="username" name="username" placeholder="username" required><br>
+        <input type="email" name="email" placeholder="E-Mail" required><br>
+        <input type="password" name="password" placeholder="Haslo" required><br>
         <button type="submit" name="sub" onclick="slog.php">Zaloguj się</button>
     </form>
 </body>
