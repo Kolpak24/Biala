@@ -9,4 +9,5 @@ if(isset($_POST['sub'])){
     header('location:glowna.php');
     exit();
 }
+echo '1';
 ?>
