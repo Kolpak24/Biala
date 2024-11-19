@@ -40,6 +40,7 @@
             <button type="button" onclick="location.href='singup.php'">Zarejestruj sie</button><br>
         </div>
 
+        
     </div>
 </body>
 </html>
