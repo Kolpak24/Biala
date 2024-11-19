@@ -6,23 +6,16 @@
 </head>
 
 <style>
-    body {background-color: black;}
-
-    .biala {text-align: center; color: white; font-size: 36px;}
-
-    .main{display: flex;}
-    .menu {flex: 1; text-align: left; background-color: grey; color: white ; font-size: 24px;}
-    .form {flex: 8  ; text-align: center; color: white; font-size: 26px;}
-    .login{flex: 1; text-align: right; background-color: grey; color: white;font-size: 24px}
-
-    button {width:125px; height: 25px;}
 </style>
 
 <body>
-    <div class="biala">
-    <h1>Stronnictwo bialej europy</h1>
-    <img src="bialaeuropa.avif" height="311,5" width="512">
-    </div>
+    <section class="sec1">
+        <header class="header1">
+            <h1>Stronnictwo białej europy</h1>
+            <img src="bialaeuropa.avif" height="311,5" width="512">
+
+        </header>
+    </section>
 
     <div class="main">
     
