@@ -1,13 +1,14 @@
 <?php
-$baza = new mysqli('localhost','root', '', 'biala');
-if(isset($_POST['sub'])){
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $sql = "SELECT username, email, password FROM login WHERE username='{$username}' AND email='{$email}' AND '{$password}";
-    $baza->query($sql);
-    header('location:glowna.php');
-    exit();
-}
-echo '1';
+    $baza = new mysqli('localhost','root', '', 'biala');
+    $sql = "select * from login";
+    $wyn = $baza->query($sql);
+    echo "<table><tr>";
+    foreach($wyn as $w){
+        echo "<tr>";
+	echo "<td>", $w['Username'], "</td>";
+    echo "<td>", $w['Email'], "</td>";
+	echo "<td>", $w['Password'], "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
 ?>
