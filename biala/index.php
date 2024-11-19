@@ -18,5 +18,6 @@
         <label for="opcje">Czy popierasz ide bialej europy</label><br> 
         <button type="button" onclick="location.href='indextak.php'">TAK</button>
         <button type="button" onclick="location.href='indexnie.php'">NIE</button>
+    </form>
 </body>
 </html>
