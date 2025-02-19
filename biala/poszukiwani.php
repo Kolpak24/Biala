@@ -36,6 +36,20 @@
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
                 }
+                $sql = "SELECT * FROM poszukiwani";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    echo "<select name='poszukiwani'>";
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<option value='" . $row["id"] . "'>" . $row["imie"] . " " . $row["nazwisko"] . "</option>";
+                    }
+                    echo "</select>";
+                } else {
+                    echo "0 results";
+                }
+
+
                 $conn->close();
                 ?>
 
