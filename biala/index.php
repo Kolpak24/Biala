@@ -16,10 +16,11 @@
     <main>
         <menu class="left_menu">
             <ul class="ul_menu">
-                <li class="li_menu"><a href="#art">Artykuły</a></li>
-                <li class="li_menu"><a href="#wrogowie">Wrogowie</a></li>
-                <li class="li_menu"><a href="#straceni">Straceni</a></li>
-                <li class="li_menu"><a href="#poszukiwani">Poszukiwani</a></li>
+                <li class="li_menu"><a href="index.php">Główna</a></li>
+                <li class="li_menu"><a href="art.php">Artykuły</a></li>
+                <li class="li_menu"><a href="wrogowie.php">Wrogowie</a></li>
+                <li class="li_menu"><a href="straceni.php">Straceni</a></li>
+                <li class="li_menu"><a href="poszukiwani.php">Poszukiwani</a></li>
             </ul>
         </menu>
         <article class="art">
@@ -27,7 +28,7 @@
                 <section>
                     <h1>Tytuł</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut, exercitationem voluptatem
-                        animi officiis, harum eligendi optio in natus distinctio alias qui aperiam recusandae magni
+                        animi officiis, har2um eligendi optio in natus distinctio alias qui aperiam recusandae magni
                         quasi
                         nostrum molestias? Placeat, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                         accusamus iste nobis quod inventore. Saepe reiciendis quo, asperiores, porro deleniti distinctio
