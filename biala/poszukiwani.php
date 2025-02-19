@@ -29,7 +29,7 @@
                 $servername = "localhost";
                 $username = "root";
                 $password = "";
-                $dbname = "poszukiwani";
+                $dbname = "Biala";
 
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
