@@ -45,6 +45,22 @@
                         echo "<option value='" . $row["id"] . "'>" . $row["imie"] . " " . $row["nazwisko"] . "</option>";
                     }
                     echo "</select>";
+                    echo "<form method='post' action=''>";
+                    echo "<input type='submit' value='Pokaż zdjęcie'>";
+                    echo "</form>";
+
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $selected_id = $_POST['poszukiwani'];
+                        $sql = "SELECT zdjecie FROM poszukiwani WHERE id='$selected_id'";
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            $row = $result->fetch_assoc();
+                            echo "<img src='images/" . $row["zdjecie"] . "' alt='Zdjęcie'>";
+                        } else {
+                            echo "Brak zdjęcia";
+                        }
+                    }
                 } else {
                     echo "0 results";
                 }
