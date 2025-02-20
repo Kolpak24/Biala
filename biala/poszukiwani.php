@@ -51,7 +51,7 @@
 
                         if ($result->num_rows > 0) {
                             $row = $result->fetch_assoc();
-                            echo "<img src=" . $row['zdjecie'] . " alt='Zdjęcie'>";
+                            echo "<img src=" . $row['zdjecie'] . " alt='Zdjęcie'><br>";   
                         } else {
                             echo "Brak zdjęcia";
                         }
