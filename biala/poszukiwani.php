@@ -35,12 +35,12 @@
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
+                    echo "<form method='post' action=''>";
                     echo "<select name='poszukiwani'>";
                     while ($row = $result->fetch_assoc()) {
-                        echo "<option value='" . $row["id"] . "'>" . $row["imie"] . " " . $row["nazwisko"] . "</option>";
+                        echo "<option value='" . $row["Id"] . "'>" . $row["imie"] . " " . $row["nazwisko"] . "</option>";
                     }
                     echo "</select>";
-                    echo "<form method='post' action=''>";
                     echo "<input type='submit' value='Pokaż zdjęcie'>";
                     echo "</form>";
 
@@ -51,7 +51,7 @@
 
                         if ($result->num_rows > 0) {
                             $row = $result->fetch_assoc();
-                            echo "<img src='images/" . $row["zdjecie"] . "' alt='Zdjęcie'>";
+                            echo "<img src=" . $row['zdjecie'] . " alt='Zdjęcie'>";
                         } else {
                             echo "Brak zdjęcia";
                         }
@@ -59,14 +59,8 @@
                 } else {
                     echo "0 results";
                 }
-
-
                 $conn->close();
-                ?>
-
-
-
-
+                ?>  
             </article>
         </article>
     </main>
